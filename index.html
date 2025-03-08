@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartavya Gore - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1920x1080/?luxury,gold,abstract') no-repeat center center/cover;
+            color: #ffffff;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .light-mode {
+            background: url('https://source.unsplash.com/1920x1080/?modern,minimalist') no-repeat center center/cover;
+            color: #222;
+        }
+        header, nav, section, footer {
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        .light-mode header, .light-mode nav, .light-mode section, .light-mode footer {
+            background: rgba(255, 255, 255, 0.95);
+            color: #222;
+        }
+        header {
+            background: linear-gradient(135deg, #3d2c8d, #8e44ad);
+            color: white;
+            padding: 40px 20px;
+            animation: fadeIn 2s ease-in-out;
+            box-shadow: 0px 4px 15px rgba(255, 223, 186, 0.6);
+        }
+        .light-mode header {
+            background: linear-gradient(135deg, #f8f9fa, #e3e6f3);
+            color: #222;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ffcc00;
+            color: #1f1c3c;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            margin-top: 15px;
+        }
+        .cta-button:hover {
+            background: #ff6b6b;
+            transform: scale(1.1);
+        }
+        .toggle-theme {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ffcc00;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        nav {
+            background: rgba(41, 38, 84, 0.9);
+            padding: 15px 0;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ff6b6b;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 30px;
+            margin: 30px auto;
+            width: 80%;
+            background: rgba(58, 55, 106, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+        }
+        .light-mode section {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        footer {
+            background: rgba(31, 28, 60, 0.8);
+            color: white;
+            padding: 15px;
+        }
+    </style>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</head>
+<body>
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+    <header>
+        <h1>Kartavya Gore</h1>
+        <p>Software Developer | Tech Enthusiast</p>
+        <a href="#contact" class="cta-button">Hire Me</a>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Kartavya Gore, a results-driven software developer with a strong foundation in AI, blockchain, and full-stack development. My journey in tech began with a deep curiosity about how technology shapes the world, leading me to master cutting-edge technologies and create impactful digital solutions.</p>
+        <p>With a keen eye for problem-solving and innovation, I specialize in designing scalable and efficient software solutions that push the boundaries of what's possible. Whether it's developing AI-driven applications, building decentralized Web3 solutions, or crafting seamless user experiences, I am dedicated to delivering excellence in every project.</p>
+        <p>Beyond coding, I actively contribute to the tech community through mentoring, content creation, and open-source collaborations. My passion lies in staying ahead of industry trends, continuously learning, and leveraging technology to create real-world impact.</p>
+        <p>Let's connect and explore opportunities to collaborate on innovative projects that drive transformation in the tech landscape!</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>🔹 Full-Stack Web Development</p>
+        <p>🔹 AI/ML Development</p>
+        <p>🔹 Blockchain & Web3 Solutions</p>
+        <p>🔹 Tech Consulting & Training</p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <p><strong>VisionBrief</strong> - AI-powered video summarization platform.</p>
+        <p><strong>AI Healthcare Chatbot</strong> - A chatbot that provides intelligent medical assistance.</p>
+        <p><strong>News Verifier</strong> - AI tool for detecting misinformation.</p>
+    </section>
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon! Stay tuned for insights on AI, web development, and more.</p>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>“Kartavya is an exceptional developer who delivers top-notch solutions.” – Client A</p>
+        <p>“His AI expertise helped automate our workflow efficiently.” – Client B</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: kartavyagore@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kartavyagore">linkedin.com/in/kartavyagore</a></p>
+        <p>GitHub: <a href="https://github.com/kartavyagore">github.com/kartavyagore</a></p>
+        <a href="mailto:kartavyagore@gmail.com" class="cta-button">Let's Connect</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Kartavya Gore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
