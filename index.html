@@ -6,48 +6,52 @@
     <title>Kartavya Gore - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap');
         
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://source.unsplash.com/1920x1080/?luxury,gold,abstract') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1920x1080/?luxury,gold,abstract') no-repeat fixed center center/cover;
             color: #ffffff;
             text-align: center;
         }
         header {
             background: linear-gradient(135deg, #3d2c8d, #8e44ad);
             color: white;
-            padding: 40px 20px;
-            box-shadow: 0px 4px 15px rgba(255, 223, 186, 0.6);
+            padding: 50px 20px;
+            box-shadow: 0px 4px 20px rgba(255, 223, 186, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .cta-button {
             display: inline-block;
-            background: #ffcc00;
+            background: linear-gradient(135deg, #ffcc00, #ff9900);
             color: #1f1c3c;
-            padding: 15px 25px;
-            font-size: 18px;
+            padding: 15px 30px;
+            font-size: 20px;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
             transition: background 0.3s, transform 0.3s;
-            margin-top: 15px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.8);
         }
         .cta-button:hover {
-            background: #ff6b6b;
+            background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
             transform: scale(1.1);
         }
         nav {
-            background: rgba(41, 38, 84, 0.9);
-            padding: 15px 0;
+            background: rgba(41, 38, 84, 0.95);
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0px 4px 15px rgba(255, 223, 186, 0.6);
         }
         nav a {
             color: #ffcc00;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 0 15px;
+            margin: 0 20px;
             transition: color 0.3s, transform 0.3s;
         }
         nav a:hover {
@@ -55,17 +59,43 @@
             transform: scale(1.1);
         }
         section {
-            padding: 30px;
-            margin: 30px auto;
+            padding: 40px;
+            margin: 40px auto;
             width: 80%;
-            background: rgba(58, 55, 106, 0.9);
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            background: rgba(58, 55, 106, 0.95);
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+            font-size: 18px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ffcc00;
+            display: inline-block;
+            padding-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #ffcc00, #ff9900);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        .qr-code {
+            margin-top: 20px;
         }
         footer {
-            background: rgba(31, 28, 60, 0.8);
+            background: rgba(31, 28, 60, 0.9);
             color: white;
-            padding: 15px;
+            padding: 20px;
+            font-size: 16px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -85,30 +115,35 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am Kartavya Gore, a results-driven software developer with a strong foundation in AI, blockchain, and full-stack development. My journey in tech began with a deep curiosity about how technology shapes the world, leading me to master cutting-edge technologies and create impactful digital solutions.</p>
+        <p>I am Kartavya Gore, a results-driven software developer with a strong foundation in JAVA, Python, and full-stack development. My journey in tech began with a deep curiosity about how technology shapes the world, leading me to master cutting-edge technologies and create impactful digital solutions.</p>
     </section>
 
     <section id="services">
-        <h2>Services</h2>
-        <p>🔹 Full-Stack Web Development</p>
+        <h2>Services</h2>        
+        <p>🔹 Java Full-Stack Development</p>
         <p>🔹 AI/ML Development</p>
-        <p>🔹 Blockchain & Web3 Solutions</p>
-        <p>🔹 Tech Consulting & Training</p>
+        <p>🔹 Cloud computing</p>
+        <p>🔹 DevOps</p>
     </section>
 
     <section id="projects">
-        <h2>Featured Projects</h2>
-        <p><strong>VisionBrief</strong> - AI-powered video summarization platform.</p>
+        <h2>Featured Projects</h2>        
+        <p><strong>AIResume</strong> - AI-powered Resume maker platform.</p>
         <p><strong>AI Healthcare Chatbot</strong> - A chatbot that provides intelligent medical assistance.</p>
         <p><strong>News Verifier</strong> - AI tool for detecting misinformation.</p>
     </section>
     
     <section id="contact">
         <h2>Contact Me</h2>
+        
         <p>Email: kartavyagore@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/kartavyagore">linkedin.com/in/kartavyagore</a></p>
+        <p>Contact : 8999738005</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kartavya-gore">linkedin.com/in/kartavyagore</a></p>
         <p>GitHub: <a href="https://github.com/kartavyagore">github.com/kartavyagore</a></p>
-        <a href="mailto:kartavyagore@gmail.com" class="cta-button">Let's Connect</a>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://linkedin.com/in/kartavya-gore" class="qr-code" alt="LinkedIn QR Code">
+        <p><a href="mailto:kartavyagore@gmail.com" class="cta-button">Let's Connect</a></p>
+      
+       <p><a href="https://wa.me/918999738005?text=Hey" class="cta-button">Let's Chat</a></p>
     </section>
     <footer>
         <p>&copy; 2025 Kartavya Gore. All Rights Reserved.</p>
