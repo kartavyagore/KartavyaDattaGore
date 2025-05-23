@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap');
         
         body {
-            font-family: 'Poppins', sans-serif;
+            
             margin: 0;
             padding: 0;
             background: url('https://source.unsplash.com/1920x1080/?luxury,gold,abstract') no-repeat fixed center center/cover;
@@ -67,6 +67,11 @@
             box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
             font-size: 18px;
         }
+
+        .links,#p1,#p2,#p3{
+            color: rgb(246, 242, 242);
+            text-decoration: underline;
+        }
         h2 {
             font-family: 'Playfair Display', serif;
             font-size: 30px;
@@ -85,6 +90,12 @@
             border-radius: 2px;
         }
         
+        .logo{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
         footer {
             background: rgba(31, 28, 60, 0.9);
             color: white;
@@ -126,9 +137,9 @@
 
     <section id="projects">
         <h2>Featured Projects</h2>        
-        <p><strong>AI-Powered Code Editor - </strong><a href="https://ai-powered-code-reviewer-teal.vercel.app/">Click here.</a></p>
-        <p><strong>A MERN Stack Book Store - </strong><a href="https://bookstore-azure-phi.vercel.app/">Click here.</a></p>
-        <p><strong>LeadJS – Smart Note/Lead Organizer - </strong><a href="https://leadjs.netlify.app/">Click here.</a></p>
+        <p ><strong>AI-Powered Code Editor - </strong><a id="p1" href="https://ai-powered-code-reviewer-teal.vercel.app/">Click here.</a></p>
+        <p ><strong>A MERN Stack Book Store - </strong><a id="p2" href="https://bookstore-azure-phi.vercel.app/">Click here.</a></p>
+        <p ><strong>LeadJS – Smart Note/Lead Organizer - </strong><a id="p3" href="https://leadjs.netlify.app/">Click here.</a></p>
     </section>
     
     <section id="contact">
@@ -136,12 +147,14 @@
         
         <p>Email: kartavyagore0@gmail.com</p>
         <p>Contact : +918999738005</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/kartavya-gore">linkedin.com/in/kartavyagore</a></p>
-        <p>GitHub: <a href="https://github.com/kartavyagore">github.com/kartavyagore</a></p>
-
-        <p><a href="mailto:kartavyagore@gmail.com" class="cta-button">Let's Connect</a></p>
+        <div class="logo">
+            <p> <a class="links" href="https://linkedin.com/in/kartavya-gore"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/></a></p>
+            <p><a class="links" href="https://github.com/kartavyagore"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a></p>
+            
+            <p><a href="mailto:kartavyagore@gmail.com" ><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/gmail-new.png" alt="gmail-new"/></a></p>
+            <p><a href="https://wa.me/918999738005?text=Hey" ><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/whatsapp--v1.png" alt="whatsapp--v1"/></a></p>
+        </div>
       
-       <p><a href="https://wa.me/918999738005?text=Hey" class="cta-button">Let's Chat</a></p>
     </section>
     <footer>
         <p>&copy; 2025 Kartavya Gore. All Rights Reserved.</p>
